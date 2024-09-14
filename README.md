@@ -1,9 +1,10 @@
 # dcm-jpg-html
 Work in progress
 
-requirements: convert dicom images -> jpg/png in a folder
-for example with imagej and the bioformats plugin
+## prerequsites: convert dicom images -> numbered jpg/png in a folder
 
 
-python3 standard libraries
-python-datauri==2.2.0
+
+##uses python3 standard libraries
+
+[python-datauri==2.2.0] (https://pypi.org/project/python-datauri/)
