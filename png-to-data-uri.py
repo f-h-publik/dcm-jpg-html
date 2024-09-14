@@ -9,9 +9,9 @@ from os import path as o_p
 from os import makedirs as o_makedirs
 from time import sleep as t_sleep
 
-# png_uri=DataURI.from_file('Axelfall-MR240430-CorT20000.png')
-# print(str(png_uri))
-f_initLog()
+# for more information see: https://github.com/f-h-publik/dcm-jpg-html
+
+
 
 def f_FOLDERdotSerialAppend(in_folder,in_appendfile,in_andelse=".png"):
     folder_img_list=f_retIMG.f_allimg_thisfolder(in_folder,in_andelse)
@@ -27,8 +27,7 @@ def f_FOLDERdotSerialAppend(in_folder,in_appendfile,in_andelse=".png"):
             f.write(', \n')
         else:
             f.write('\n')
-        # f_l('image'+str(i)+': \'-datauriremoved-\', ')
-    f.write('};\n\n\n\n\n')
+     f.write('};\n\n\n\n\n')
     f.close()
 
 def f_init_datauri_file(in_folder,in_appendfile,in_casename="case",in_examname="exam",in_seriesname="series",sag=False,xres=512,yres=512):
@@ -63,8 +62,7 @@ def f_append_todatauri(in_append,out_html,pre_append="/config/workspace/slidesho
 
 
 
-# def f_end_datauri_file(in_folder,in_appendfile):
-curr_base_base="/config/workspace/slideshoe-MCQ/"
+ curr_base_base="/config/workspace/slideshoe-MCQ/"
 curr_casename="Neo1"
 curr_casefolder=curr_casename+"/"
 curr_examname="MR-Hjarna"
