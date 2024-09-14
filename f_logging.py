@@ -1,4 +1,5 @@
 import logging,datetime,sys
+# for more information see: https://github.com/f-h-publik/dcm-jpg-html
 
 def f_initLog():
     logging.basicConfig(filename="f_log.log",
