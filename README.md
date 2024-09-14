@@ -7,4 +7,4 @@ Work in progress
 
 ##uses python3 standard libraries
 
-[python-datauri==2.2.0] (https://pypi.org/project/python-datauri/)
+ python-datauri==2.2.0  https://pypi.org/project/python-datauri/
