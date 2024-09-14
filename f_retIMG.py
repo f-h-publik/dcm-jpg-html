@@ -5,7 +5,7 @@ from pathlib import Path as pathlib_path
 from sys import exit
 
 
-# def f_retIMG_initlog():
+# for more information see: https://github.com/f-h-publik/dcm-jpg-html
 
 
 
@@ -55,47 +55,18 @@ def f_allimg_thisfolder(inpath='EMPTY',in_andelse='.png',in_digits=4):
     else:
         thispath=pathlib_path.cwd()
     
-    # logger.debug(thispath)
-    f_out=listdir(thispath)
+     f_out=listdir(thispath)
     f_out.sort()
-    # logger.debug(f_out)
+ 
+     outdirs,outfiles=f_retDirsFiles(f_out,thispath)
 
-    #check keep only files not folders
-    outdirs,outfiles=f_retDirsFiles(f_out,thispath)
+     outfiles,disc_files=f_retEnumImg(outfiles,in_andelse,in_digits)
 
-    # logger.debug(outfiles)
-    outfiles,disc_files=f_retEnumImg(outfiles,in_andelse,in_digits)
-
-    # logging:
-    
-    # logger.debug("\n\n pattern: *"+in_andelse+" \n\n # digits: "+str(in_digits)+"\n")
-    # logger.debug("\n\n working directory: \n")
-    # logger.debug(thispath)
-    # logger.debug("\n\n discarded folders: \n")
-    # logger.debug(outdirs)
-    # logger.debug("\n\n discarded files: \n")
-    # logger.debug(disc_files)
-    # logger.debug("\n\n kept files: \n")
-    # logger.debug(outfiles)
-    f_logging.f_log('wohoo')
+ 
 
 
     return outfiles
 
 
-# def f_anyFileInList():
-#     for a in range(len(f_filesinthisfolder)-1):
-#         f_currfile=f_filesinthisfolder[a]
-#         # f_isfile=path.isfile(f_currfile)
-#         # print(f_currfile," is a file?",f_isfile)
-#         if (f_currfile in f_stopIfFileorFolderExists): #agnostic to file or folder
-
-#             print(f_currfile,' ; possible of target of this operation all ready exists. rename as backup')
-#             print('quitting')
-#             exit()
-
-
-# filin,dirin=f_lsFilesDirs("static/img/testfall-axel/MRAXEL-240430/SAGT2")
-# f_retNumberedImgList(filin)
-
-# f_allimg_thisfolder('static/img/testfall-axel/MRAXEL-240430/SAGT2','.png')
+ 
+ 
