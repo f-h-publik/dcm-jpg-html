@@ -1,6 +1,6 @@
 (work in progress)
 Licensing according included components 
-if no restrictions exist from included components:
+## If no restrictions exist from included components:
 
 Licensing according to unlicense.org
 
